@@ -1,0 +1,117 @@
+/* ==================
+   CTA Section
+   ================== */
+
+.cta {
+  position: relative;
+}
+
+.cta__wrapper {
+  position: relative;
+  padding: 80px 60px;
+  background: var(--gradient-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.cta__bg-orb--1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 212, 255, 0.1);
+  top: -20%;
+  right: -5%;
+}
+
+.cta__bg-orb--2 {
+  width: 250px;
+  height: 250px;
+  background: rgba(0, 153, 184, 0.08);
+  bottom: -20%;
+  left: -5%;
+}
+
+.cta__content {
+  position: relative;
+  z-index: 2;
+}
+
+.cta__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.cta__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 550px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cta__btn {
+  padding: 16px 36px;
+}
+
+.cta__note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta__wrapper {
+    padding: 48px 24px;
+  }
+
+  .cta__actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta__wrapper {
+    padding: 36px 16px;
+    border-radius: var(--radius-lg);
+  }
+
+  .cta__subtitle {
+    font-size: 0.92rem;
+  }
+
+  .cta__btn {
+    max-width: 100%;
+    padding: 12px 24px;
+  }
+
+  .cta__note {
+    font-size: 0.78rem;
+  }
+}
+
