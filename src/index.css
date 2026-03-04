@@ -120,6 +120,14 @@ body {
   position: relative;
 }
 
+/* Fluid typography helpers */
+h1 { font-size: clamp(2rem, 4.2vw, 3.5rem); }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.6rem); }
+h3 { font-size: clamp(1.25rem, 2.8vw, 1.8rem); }
+
+/* Ensure images cover their boxes where needed */
+img { object-fit: cover; }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -172,7 +180,7 @@ button {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: var(--container-padding);
+  padding: clamp(12px, 2.5vw, 24px);
 }
 
 .section {
