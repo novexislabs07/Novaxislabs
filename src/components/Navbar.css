@@ -184,17 +184,19 @@
     justify-content: center;
     padding: 40px 24px;
     gap: 6px;
-    z-index: 1000;
+    z-index: 900; /* keep behind the toggle button */
     opacity: 0;
     visibility: hidden;
     transform: scale(0.98);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none; /* prevent hidden menu from blocking clicks */
   }
 
   .navbar__links--open {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+    pointer-events: auto;
   }
 
   .navbar__link {
