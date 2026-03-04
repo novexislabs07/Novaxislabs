@@ -120,6 +120,11 @@ body {
   position: relative;
 }
 
+/* Prevent unexpected horizontal overflow on small devices */
+html, body, #root {
+  overflow-x: hidden;
+}
+
 /* Fluid typography helpers */
 h1 { font-size: clamp(2rem, 4.2vw, 3.5rem); }
 h2 { font-size: clamp(1.6rem, 3.6vw, 2.6rem); }
