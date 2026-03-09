@@ -47,10 +47,7 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__title">
-          We Build Digital
-          <br />
-          Solutions That Drive
-          <br />
+          We Build Digital Solutions That Drive
           <span className="hero__rotating-word" key={wordIndex}>
             {words[wordIndex]}
           </span>

@@ -32,7 +32,7 @@ export default function Navbar() {
     <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`} id="main-nav">
       <div className="navbar__container container">
         <Link to="/" className="navbar__logo" id="logo-link">
-          <img src="/novexis-logo.jpg" alt="Novexis Labs Logo" className="navbar__logo-img" />
+          <img src={`${import.meta.env.BASE_URL}novexis-logo.jpg`} alt="Novexis Labs Logo" className="navbar__logo-img" />
           <span className="navbar__logo-text">
             Novexis <span className="gradient-text">Labs</span>
           </span>

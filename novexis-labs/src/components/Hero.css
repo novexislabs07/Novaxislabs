@@ -120,15 +120,18 @@
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.2rem, 8vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -1.5px;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__rotating-word {
-  display: inline-block;
+  display: block;
   background: var(--gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -268,8 +271,9 @@
   }
 
   .hero__title {
-    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    font-size: clamp(1.8rem, 8vw, 3.2rem);
     letter-spacing: -1px;
+    width: 100%;
   }
 
   .hero__subtitle {
@@ -340,7 +344,7 @@
   }
 
   .hero__title {
-    font-size: clamp(1.5rem, 8vw, 2.2rem);
+    font-size: clamp(1.4rem, 10vw, 2.4rem);
   }
 
   .hero__subtitle {

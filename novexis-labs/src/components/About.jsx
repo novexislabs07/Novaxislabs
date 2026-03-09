@@ -81,7 +81,7 @@ export default function AboutSection() {
             <div className="about__visual">
               <div className="about__visual-inner">
                 <div className="about__logo-showcase">
-                  <img src="/novexis-logo.jpg" alt="Novexis Labs" className="about__logo-img" />
+                  <img src={`${import.meta.env.BASE_URL}novexis-logo.jpg`} alt="Novexis Labs" className="about__logo-img" />
                 </div>
                 <div className="about__visual-badge">
                   <Award size={20} />

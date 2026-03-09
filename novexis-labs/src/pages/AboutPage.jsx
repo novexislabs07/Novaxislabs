@@ -18,7 +18,7 @@ const founders = [
     role: 'Co-Founder',
     tagline: 'Visionary Leader & Strategic Architect',
     bio: 'The driving force behind Novexis Labs\' vision and growth strategy. Shubhamm combines sharp business acumen with deep industry insight to steer the agency towards excellence and deliver transformative results for clients.',
-    photo: '/shubhamm-ceo.jpg',
+    photo: `${import.meta.env.BASE_URL}shubhamm-ceo.jpg`,
     linkedin: 'https://www.linkedin.com/in/shubhamthakkar2007/',
     email: 'shubhamthakkar2007@gmail.com',
   },
@@ -27,7 +27,7 @@ const founders = [
     role: 'Co-Founder',
     tagline: 'Tech Innovator & Code Craftsman',
     bio: 'The technical mastermind who ensures every product we build is powered by cutting-edge technology. Bhavya\'s deep expertise in modern web technologies and passion for clean code drives the superior quality of our deliverables.',
-    photo: '/bhavya-cto.jpg',
+    photo: `${import.meta.env.BASE_URL}bhavya-cto.jpg`,
     linkedin: 'https://www.linkedin.com/in/bhavya-mehta-83431434b/',
     email: 'bhavyamehta2819@gmail.com',
   },
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </div>
             <div className="about-page__story-visual">
               <div className="about-page__story-card glass-card">
-                <img src="/novexis-logo.jpg" alt="Novexis Labs" className="about-page__story-logo" />
+                <img src={`${import.meta.env.BASE_URL}novexis-logo.jpg`} alt="Novexis Labs" className="about-page__story-logo" />
                 <h3>Novexis Labs</h3>
                 <p>Premium Digital Agency</p>
               </div>

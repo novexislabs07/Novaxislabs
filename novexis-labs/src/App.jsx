@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Novaxislabs">
       <ScrollToTop />
       <Navbar />
       <Routes>
