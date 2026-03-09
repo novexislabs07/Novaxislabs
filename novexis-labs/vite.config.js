@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/<REPO_NAME>/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Novaxislabs/' : '/',
   plugins: [react()],
 })
