@@ -330,3 +330,15 @@
   }
 }
 
+\n
+@media (max-width: 320px) {
+  .about-page__hero { padding: 80px 0 32px; }
+  .about-page__founder { padding: 24px 16px; }
+  .about-page__founder-avatar { width: 80px; height: 80px; }
+  .about-page__founder-social { width: 34px; height: 34px; }
+}
+@media (max-width: 200px) {
+  .about-page__title { font-size: 1.1rem; }
+  .about-page__story-card { padding: 24px 12px; }
+  .about-page__story-logo { width: 60px; height: 60px; }
+}\n

@@ -230,3 +230,17 @@
     grid-template-columns: 1fr;
   }
 }
+\n
+@media (max-width: 320px) {
+  .about__visual { width: 240px; height: 240px; }
+  .about__logo-showcase { width: 100px; height: 100px; }
+  .about__visual-badge { padding: 10px 16px; }
+  .about__badge-title { font-size: 0.8rem; }
+  .about__stat-number { font-size: 1.5rem; }
+}
+@media (max-width: 200px) {
+  .about__visual { width: 160px; height: 160px; }
+  .about__visual-ring, .about__visual-ring--2 { display: none; }
+  .about__logo-showcase { width: 80px; height: 80px; }
+  .about__visual-badge { display: none; }
+}\n

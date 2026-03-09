@@ -129,3 +129,14 @@
     grid-template-columns: 1fr;
   }
 }
+\n
+@media (max-width: 320px) {
+  .services__card { padding: 24px 16px; }
+  .services__card-icon { width: 44px; height: 44px; margin-bottom: 16px; }
+  .services__card-title { font-size: 1.1rem; }
+}
+@media (max-width: 200px) {
+  .services__card { padding: 16px 10px; }
+  .services__card-icon { width: 36px; height: 36px; }
+  .services__feature-tag { font-size: 0.65rem; padding: 2px 8px; }
+}\n

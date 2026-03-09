@@ -115,3 +115,38 @@
   }
 }
 
+@media (max-width: 320px) {
+  .cta__wrapper {
+    padding: 24px 12px;
+  }
+
+  .cta__title {
+    font-size: 1.3rem;
+  }
+
+  .cta__subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+  }
+
+  .cta__note {
+    font-size: 0.7rem;
+  }
+}
+
+/* Extreme Small (≤200px) */
+@media (max-width: 200px) {
+  .cta__wrapper {
+    padding: 16px 8px;
+  }
+  
+  .cta__title {
+    font-size: 1rem;
+  }
+  
+  .cta__subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+  }
+}
+

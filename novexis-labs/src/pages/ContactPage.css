@@ -325,7 +325,6 @@ a.contact-page__detail:hover {
   line-height: 1.6;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .contact-page__grid {
     grid-template-columns: 1fr;
@@ -340,5 +339,35 @@ a.contact-page__detail:hover {
 
   .contact-page__form-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-page__hero {
+    padding: 80px 0 32px;
+  }
+
+  .contact-page__form-wrapper {
+    padding: 16px;
+  }
+
+  .contact-page__detail {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .contact-page__info-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-page__whatsapp-section {
+    padding: 16px;
+  }
+}
+
+/* Extreme Small (≤200px) */
+@media (max-width: 200px) {
+  .contact-page__title {
+    font-size: 1.1rem;
   }
 }

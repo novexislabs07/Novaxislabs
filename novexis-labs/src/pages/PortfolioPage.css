@@ -205,3 +205,35 @@
   }
 }
 
+@media (max-width: 320px) {
+  .portfolio-page__hero {
+    padding: 80px 0 32px;
+  }
+
+  .portfolio-page__card-preview {
+    height: 120px;
+  }
+
+  .portfolio-page__card-body {
+    padding: 16px 12px;
+  }
+}
+
+/* Extreme Small (≤200px) */
+@media (max-width: 200px) {
+  .portfolio-page__title {
+    font-size: 1.1rem;
+  }
+
+  .portfolio-page__card-preview {
+    height: 90px;
+  }
+
+  .portfolio-page__filter {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+

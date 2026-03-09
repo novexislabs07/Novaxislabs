@@ -506,17 +506,39 @@ button {
 /* Tiny screens (≤320px) */
 @media (max-width: 320px) {
   :root {
-    --container-padding: 0 10px;
-    --section-padding: 40px 0;
+    --container-padding: 0 8px;
+    --section-padding: 32px 0;
   }
 
   .section-title {
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem, 8vw, 1.4rem);
   }
 
   .btn-primary,
   .btn-secondary {
-    padding: 10px 16px;
-    font-size: 0.82rem;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+/* Ultra-tiny screens (≤200px) */
+@media (max-width: 200px) {
+  :root {
+    --container-padding: 0 4px;
+    --section-padding: 24px 0;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+  }
+  
+  .section-label::before {
+    width: 15px;
   }
 }
