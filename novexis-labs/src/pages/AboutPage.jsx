@@ -15,7 +15,7 @@ const values = [
 const founders = [
   {
     name: 'Shubhamm Thakkar',
-    role: 'Chief Executive Officer',
+    role: 'Co-Founder',
     tagline: 'Visionary Leader & Strategic Architect',
     bio: 'The driving force behind Novexis Labs\' vision and growth strategy. Shubhamm combines sharp business acumen with deep industry insight to steer the agency towards excellence and deliver transformative results for clients.',
     photo: '/shubhamm-ceo.jpg',
@@ -24,7 +24,7 @@ const founders = [
   },
   {
     name: 'Bhavya Mehta',
-    role: 'Chief Technology Officer',
+    role: 'Co-Founder',
     tagline: 'Tech Innovator & Code Craftsman',
     bio: 'The technical mastermind who ensures every product we build is powered by cutting-edge technology. Bhavya\'s deep expertise in modern web technologies and passion for clean code drives the superior quality of our deliverables.',
     photo: '/bhavya-cto.jpg',
