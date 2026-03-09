@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router basename="/Novaxislabs">
+    <Router>
       <ScrollToTop />
       <Navbar />
       <Routes>
