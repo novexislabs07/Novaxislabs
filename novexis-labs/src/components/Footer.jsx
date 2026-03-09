@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <Link to="/" className="footer__logo" onClick={scrollToTop}>
-              <img src="/novexis-logo.jpg" alt="Novexis Labs" className="footer__logo-img" />
+              <img src={import.meta.env.DEV ? "/novexis-logo.jpg" : `${import.meta.env.BASE_URL}novexis-logo.jpg`} alt="Novexis Labs" className="footer__logo-img" />
               <span className="footer__logo-text">
                 Novexis <span className="gradient-text">Labs</span>
               </span>

@@ -255,7 +255,6 @@
     padding: 14px 24px;
   }
 }
-\n
 @media (max-width: 1024px) {
   .navbar__toggle { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: rgba(10, 14, 26, 0.5); -webkit-tap-highlight-color: transparent; }
   .navbar__toggle:active { background: rgba(0, 212, 255, 0.15); border-color: var(--cyan-500); }
@@ -275,4 +274,4 @@
 }
 @media (max-width: 200px) {
   .navbar__logo-text { display: none; }
-}\n
+}
