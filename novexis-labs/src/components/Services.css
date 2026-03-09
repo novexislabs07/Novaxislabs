@@ -4,6 +4,8 @@
 
 .services {
   position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .services__glow {
@@ -11,8 +13,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
+  width: min(600px, 90vw);
+  height: min(600px, 90vw);
   background: radial-gradient(circle, rgba(0, 212, 255, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
@@ -45,8 +47,8 @@
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 200%;
-  height: 200%;
+  width: 150%;
+  height: 150%;
   background: radial-gradient(circle at center, rgba(0, 212, 255, 0.06) 0%, transparent 50%);
   opacity: 0;
   transition: opacity var(--transition-base);

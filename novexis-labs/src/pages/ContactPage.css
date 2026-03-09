@@ -225,23 +225,26 @@ a.contact-page__detail:hover {
   appearance: none;
   cursor: pointer;
   padding-right: 44px; /* Space for the icon */
+  width: 100%;
 }
 
 .contact-page__select-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .contact-page__select-icon {
   position: absolute;
-  right: 16px;
+  right: 14px;
   width: 18px;
   height: 18px;
   color: var(--cyan-500);
   pointer-events: none;
   transition: transform var(--transition-base);
   filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.4));
+  z-index: 2;
 }
 
 .contact-page__select:focus + .contact-page__select-icon {

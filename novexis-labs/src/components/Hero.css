@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
   padding-top: 80px;
 }
 
@@ -128,6 +129,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero__rotating-word {
@@ -312,7 +315,8 @@
   }
 
   .hero__stat {
-    min-width: 80px;
+    min-width: 0;
+    flex: 1;
   }
 
   .hero__stat-number {
