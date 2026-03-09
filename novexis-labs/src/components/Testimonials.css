@@ -160,7 +160,8 @@
     font-size: 1rem;
   }
 }
-\n
+
+
 @media (max-width: 320px) {
   .testimonials__card { padding: 24px 16px; }
   .testimonials__text { font-size: 0.95rem; margin-bottom: 24px; }
@@ -171,4 +172,4 @@
   .testimonials__text { font-size: 0.85rem; margin-bottom: 16px; }
   .testimonials__controls { flex-wrap: wrap; gap: 12px; }
   .testimonials__arrow { width: 36px; height: 36px; }
-}\n
+}

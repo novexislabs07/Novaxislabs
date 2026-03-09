@@ -218,7 +218,8 @@ a.footer__whatsapp:hover svg {
   }
 }
 
-\n
+
+
 @media (max-width: 320px) {
   .footer { padding: 40px 0 0; }
   .footer__logo-img { width: 32px; height: 32px; }
@@ -228,4 +229,4 @@ a.footer__whatsapp:hover svg {
 @media (max-width: 200px) {
   .footer__logo-text, .footer__tagline { display: none; }
   .footer__socials { flex-wrap: wrap; justify-content: center; }
-}\n
+}

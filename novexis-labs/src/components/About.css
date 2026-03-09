@@ -230,7 +230,8 @@
     grid-template-columns: 1fr;
   }
 }
-\n
+
+
 @media (max-width: 320px) {
   .about__visual { width: 240px; height: 240px; }
   .about__logo-showcase { width: 100px; height: 100px; }
@@ -243,4 +244,4 @@
   .about__visual-ring, .about__visual-ring--2 { display: none; }
   .about__logo-showcase { width: 80px; height: 80px; }
   .about__visual-badge { display: none; }
-}\n
+}
