@@ -224,10 +224,29 @@ a.contact-page__detail:hover {
 .contact-page__select {
   appearance: none;
   cursor: pointer;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 40px;
+  padding-right: 44px; /* Space for the icon */
+}
+
+.contact-page__select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contact-page__select-icon {
+  position: absolute;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  color: var(--cyan-500);
+  pointer-events: none;
+  transition: transform var(--transition-base);
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.4));
+}
+
+.contact-page__select:focus + .contact-page__select-icon {
+  transform: rotate(180deg);
+  color: var(--text-primary);
 }
 
 .contact-page__select option {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { Mail, Phone, MapPin, Send, Clock, MessageCircle, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Clock, MessageCircle, Loader2, ChevronDown } from 'lucide-react';
 import './ContactPage.css';
 
 // ============================================
@@ -266,42 +266,48 @@ export default function ContactPage() {
                     </div>
                     <div className="contact-page__field">
                       <label htmlFor="service" className="contact-page__label">Service Needed *</label>
-                      <select
-                        id="service"
-                        name="service"
-                        value={formData.service}
-                        onChange={handleChange}
-                        required
-                        className="contact-page__input contact-page__select"
-                        disabled={status === 'sending'}
-                      >
-                        <option value="">Select a service</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="UI/UX Design">UI/UX Design</option>
-                        <option value="SEO Optimization">SEO Optimization</option>
-                        <option value="Digital Marketing">Digital Marketing</option>
-                        <option value="Brand Strategy">Brand Strategy</option>
-                        <option value="Maintenance & Support">Maintenance & Support</option>
-                      </select>
+                      <div className="contact-page__select-wrapper">
+                        <select
+                          id="service"
+                          name="service"
+                          value={formData.service}
+                          onChange={handleChange}
+                          required
+                          className="contact-page__input contact-page__select"
+                          disabled={status === 'sending'}
+                        >
+                          <option value="">Select a service</option>
+                          <option value="Web Development">Web Development</option>
+                          <option value="UI/UX Design">UI/UX Design</option>
+                          <option value="SEO Optimization">SEO Optimization</option>
+                          <option value="Digital Marketing">Digital Marketing</option>
+                          <option value="Brand Strategy">Brand Strategy</option>
+                          <option value="Maintenance & Support">Maintenance & Support</option>
+                        </select>
+                        <ChevronDown className="contact-page__select-icon" />
+                      </div>
                     </div>
                   </div>
 
                   <div className="contact-page__field">
                     <label htmlFor="budget" className="contact-page__label">Project Budget</label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      value={formData.budget}
-                      onChange={handleChange}
-                      className="contact-page__input contact-page__select"
-                      disabled={status === 'sending'}
-                    >
-                      <option value="">Select budget range</option>
-                      <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000</option>
-                      <option value="₹15,000 - ₹50,000">₹15,000 - ₹50,000</option>
-                      <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</option>
-                      <option value="₹1,00,000+">₹1,00,000+</option>
-                    </select>
+                    <div className="contact-page__select-wrapper">
+                      <select
+                        id="budget"
+                        name="budget"
+                        value={formData.budget}
+                        onChange={handleChange}
+                        className="contact-page__input contact-page__select"
+                        disabled={status === 'sending'}
+                      >
+                        <option value="">Select budget range</option>
+                        <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000</option>
+                        <option value="₹15,000 - ₹50,000">₹15,000 - ₹50,000</option>
+                        <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</option>
+                        <option value="₹1,00,000+">₹1,00,000+</option>
+                      </select>
+                      <ChevronDown className="contact-page__select-icon" />
+                    </div>
                   </div>
 
                   <div className="contact-page__field">
